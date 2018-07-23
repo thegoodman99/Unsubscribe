@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unsubscribe</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+  <div class="newSubscription">
+
+    <div class="newSubscription-hero" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf23e88edf0700891eeac2e0cb3664b8&auto=format&fit=crop&w=1950&q=80'">
+      <h1>Email Preferences</h1>
+    </div>
+
+  <div class="newSubscription-container">
+    <h2>Get emails specific to you</h2>
+    <p>Your email address on record is <span class="email-record">email@email.com</span></p>
+
+    <form id="preference">
+
+      <p id="gender">Gender:</p>
+      <div class="option">
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="male">Female</label>
+      </div>
+
+      <div class="option-text">
+        <label for="postal">Postal Code:</label>
+        <input type="number" class="option-text-postal" value="" name="postalCode" placeholder="Postal Code">
+      </div>
+
+      <p id="categories">Which categories you'd like to hear about? (Select all that apply):</p>
+      <div class="option">
+        <input type="checkbox" name="categories" id="train" value="train">
+        <label for="train">Train</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" name="categories" id="run" value="run">
+        <label for="run">Run</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" name="categories" id="commuter" value="commuter">
+        <label for="commuter">Commuter</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" name="categories" id="recover" value="recover">
+        <label for="recover">Recover</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" name="categories" id="swim" value="swim">
+        <label for="swim">Swim</label>
+      </div>
+
+      <p id="frequency">If you'd like to change the frequency in which you recieve Rhone marketing emails, please specify your preference:</p>
+      <div class="option">
+        <input type="radio" name="frequency" id="all" value="all">
+        <label for="all">I don't want to miss a thing - send me all communication</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="frequency" id="weekly" value="weekly">
+        <label for="weekly">Send me only one email per week</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="frequency" id="monthly" value="monthly">
+        <label for="monthly">Send me only one email per month</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="frequency" id="catalogs" value="catalogs">
+        <label for="catalogs">Send me only catalogs, no emails</label>
+      </div>
+
+      <p id="unsubscribe">If you no longer want to receive marketing emails from us, please select one of the following options:</p>
+      <div class="option">
+        <input type="radio" name="newSub-unsubscribe" id="launch" value="launch">
+        <label for="launch">Unsubscribe me from Rhone product launch emails</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="newSub-unsubscribe" id="highlight" value="highlight">
+        <label for="highlight">Unsubscribe me from Rhone product highlight emails</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="newSub-unsubscribe" id="pursuit" value="pursuit">
+        <label for="pursuit">Unsubscribe me from Rhone Pursuit emails</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="newSub-unsubscribe" id="all-emails" value="all-emails">
+        <label for="all-emails">Unsubscribe me from all emails</label>
+      </div>
+
+      <p>If you have any questions about your email preferences, please <a href="#">contact our customer service team</a></p>
+
+      <input type="submit" class="newSubscription-button" name="submitForm" value="Save Changes" />
+
+    </form>
+
+    <div class="newSubscription-error"></div>
+    <div class="newSubscription-success"></div>
+
+</div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="unsubscribe.js"></script>
+</body>
+</html>
+

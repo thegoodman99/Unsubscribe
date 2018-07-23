@@ -1,0 +1,188 @@
+ .newSubscription-hero {
+ 	height: 25em;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+ }
+
+ .newSubscription-hero h1 {
+ 	color: white;
+	text-transform: capitalize;
+	padding-top: 300px;
+	margin: auto 5%;
+	position: relative;
+	z-index: 2;
+ }
+
+.newSubscription-hero h1:after {
+	@include gradient-bottom(rgba(0,0,0,0), rgba(0,0,0,0.5));
+	content: '';
+	width: 100%;
+	height: 10em;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+}
+
+.newSubscription-container {
+	margin: 75px 5%;
+	@include neutonText;
+}
+
+.newSubscription-container h2 {
+	@include pfHeader;
+	text-transform: Uppercase;
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+
+.newSubscription-container p {
+	@include neutonText;
+	margin: 20px auto;
+	font-size: 18px;
+}
+
+.newSubscription-container p .email-record {
+	color: orange;
+}	
+
+.newSubscription-container p .email-record:last-child {
+	margin: 65px auto;
+}
+
+.newSubscription-container form p {
+	@include neutonText;
+	font-weight: bold;
+}
+
+.newSubscription-container form .option {
+	@include flexbox;
+	@include align-items(center);
+	margin: 10px 0;
+}
+
+.newSubscription-container form .option input {
+	flex: 1;
+	margin: 0;
+}
+
+.newSubscription-container form .option label {
+	@include neutonText;
+	flex: 8;
+	font-size: 16px;
+	margin: 0;
+	font-weight: 500;
+}
+
+.newSubscription-container form .option-text label {
+	@include neutonText;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.newSubscription-container form .option-text-postal {
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	border-bottom: solid 1px black;
+	width: 150px;
+	height: 26px;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.newSubscription-container .newSubscription-button {
+	background: black;
+	color: white;
+	transition: transform 0.2s;
+	border: none;
+  padding: 10px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.newSubscription-container .newSubscription-button&:hover {
+	transform: scale(1.05);
+}
+
+.newSubscription-error {
+	color: red;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+
+.newSubscription-success {
+	color: #4BB543;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.errorHelp {
+	border: solid 1px red;
+}
+
+@media screen and (min-width: 1020px) {
+	.newSubscription-hero h1 {
+		margin: auto 10%;
+	}
+
+	.newSubscription-container {
+		padding: 0 25%;		
+	}
+
+	form .newSubscription-button {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	form .newSubscription-button {
+		width: 100%;
+	}
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
